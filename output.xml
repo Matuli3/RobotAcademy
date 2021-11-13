@@ -1,46 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.9.6 on win32)" generated="20211113 12:36:27.730" rpa="false" schemaversion="2">
-<suite id="s1" name="1 Homework" source="C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\1_Homework.robot">
-<test id="s1-t1" name="Homework num. 1">
+<robot generator="Robot 4.1.2 (Python 3.9.6 on win32)" generated="20211113 13:12:34.240" rpa="false" schemaversion="2">
+<suite id="s1" name="2 Homework" source="C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\2_Homework.robot">
+<test id="s1-t1" name="Homework num. 2">
 <kw name="Log" library="BuiltIn" type="SETUP">
 <arg>${TEST_NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211113 12:36:27.783" level="INFO">Homework num. 1</msg>
-<status status="PASS" starttime="20211113 12:36:27.783" endtime="20211113 12:36:27.783"/>
+<msg timestamp="20211113 13:12:34.293" level="INFO">Homework num. 2</msg>
+<status status="PASS" starttime="20211113 13:12:34.293" endtime="20211113 13:12:34.293"/>
+</kw>
+<kw name="Log Environment Variables" library="OperatingSystem">
+<doc>Logs all environment variables using the given log level.</doc>
+<msg timestamp="20211113 13:12:34.293" level="INFO">__INTELLIJ_COMMAND_HISTFILE__ = C:\Users\lajdama\AppData\Local\JetBrains\PyCharm2021.2\terminal\history\RobotFramework_1-history1</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">_OLD_VIRTUAL_PATH = C:\Tosca\Tosca Testsuite\ToscaCommander;;C:\Tosca\Tosca Testsuite\Classic;C:\Tosca\Tosca Testsuite\Classic\dll;C:\Tosca\Tosca Testsuite\Classic\dll\GuptaEngine;C:\Tosca\Tosca Testsuite\ToscaCommander;C:\Tosca\Tosca Testsuite\Classic\dll\DelphiEngine;C:\Tosca\Tosca Testsuite\Classic\dll\PBEngine;C:\Tosca\Tosca Testsuite\Classic\dll\VBEngine;C:\Tosca\Tosca Testsuite\Classic\dll\DotNetHooking;;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oracle\64bit\product\11.2.0\client_1;C:\oracle\64bit\product\11.2.0\client_1\bin;C:\app\lajdama\product\12.1.0\dbhome_2\bin;C:\app\lajdama\product\12.1.0\dbhome_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\oracle\tuxedo10gR3\bin;C:\Program Files (x86)\Java\jre1.7.0_80\bin\;C:\Program Files\PuTTY\;C:\Users\lajdama\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.9;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\lajdama\AppData\Local\Microsoft\WindowsApps;C:\Users\lajdama\AppData\Local\GitHubDesktop\bin;C:\Users\lajdama\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lajdama\AppData\Roaming\npm</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">_OLD_VIRTUAL_PROMPT = $P$G</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">ALLUSERSPROFILE = C:\ProgramData</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">APPDATA = C:\Users\lajdama\AppData\Roaming</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">CHOCOLATEYINSTALL = C:\ProgramData\chocolatey</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">CHOCOLATEYLASTPATHUPDATE = 132780025132084125</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">CHROMEDRIVER = C:\Users\lajdama\AppData\Local\Programs\Python\Python39\Scripts</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">COMMANDER_HOME = C:\Tosca\Tosca Testsuite\ToscaCommander</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">COMMONPROGRAMFILES = C:\Program Files\Common Files</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">COMMONPROGRAMW6432 = C:\Program Files\Common Files</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">COMPUTERNAME = N005761</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">COMSPEC = C:\WINDOWS\system32\cmd.exe</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">DRIVERDATA = C:\Windows\System32\Drivers\DriverData</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">FPS_BROWSER_USER_PROFILE_STRING = Default</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">GC_LANG = German_Germany.windows-1252@Default</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">HOMEDRIVE = Z:</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">HOMEPATH = \</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">HOMESHARE = \\AVFS03\Home_VIE\lajdama</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">IDEA_INITIAL_DIRECTORY = C:\Program Files\JetBrains\PyCharm 2021.2.3\bin</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">LOCALAPPDATA = C:\Users\lajdama\AppData\Local</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">LOGONSERVER = \\AVW3603P</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">NUMBER_OF_PROCESSORS = 4</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">ONEDRIVE = C:\Users\lajdama\OneDrive</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">OS = Windows_NT</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">PATH = C:\Users\lajdama\PycharmProjects\RobotFramework_1\venv2\Scripts;C:\Tosca\Tosca Testsuite\ToscaCommander;;C:\Tosca\Tosca Testsuite\Classic;C:\Tosca\Tosca Testsuite\Classic\dll;C:\Tosca\Tosca Testsuite\Classic\dll\GuptaEngine;C:\Tosca\Tosca Testsuite\ToscaCommander;C:\Tosca\Tosca Testsuite\Classic\dll\DelphiEngine;C:\Tosca\Tosca Testsuite\Classic\dll\PBEngine;C:\Tosca\Tosca Testsuite\Classic\dll\VBEngine;C:\Tosca\Tosca Testsuite\Classic\dll\DotNetHooking;;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oracle\64bit\product\11.2.0\client_1;C:\oracle\64bit\product\11.2.0\client_1\bin;C:\app\lajdama\product\12.1.0\dbhome_2\bin;C:\app\lajdama\product\12.1.0\dbhome_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\oracle\tuxedo10gR3\bin;C:\Program Files (x86)\Java\jre1.7.0_80\bin\;C:\Program Files\PuTTY\;C:\Users\lajdama\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.9;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\lajdama\AppData\Local\Microsoft\WindowsApps;C:\Users\lajdama\AppData\Local\GitHubDesktop\bin;C:\Users\lajdama\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lajdama\AppData\Roaming\npm</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">PROCESSOR_ARCHITECTURE = AMD64</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 78 Stepping 3, GenuineIntel</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">PROCESSOR_LEVEL = 6</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">PROCESSOR_REVISION = 4e03</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">PROGRAMDATA = C:\ProgramData</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">PROGRAMFILES = C:\Program Files</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">PROGRAMFILES(X86) = C:\Program Files (x86)</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">PROGRAMW6432 = C:\Program Files</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">PROMPT = (venv2) $P$G</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">PSMODULEPATH = \\avfs03.at-work.local\Home_VIE\lajdama\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">PUBLIC = C:\Users\Public</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">SESSIONNAME = Console</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">SYSTEMDRIVE = C:</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">SYSTEMROOT = C:\WINDOWS</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">TBOX_HOME = C:\Tosca\Tosca Testsuite\TBox\</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">TEMP = C:\Users\lajdama\AppData\Local\Temp</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">TERM_SESSION_ID = 9857aed5-bfe7-439e-98cd-642718295c17</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">TERMINAL_EMULATOR = JetBrains-JediTerm</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">TESSDATA_PREFIX = C:\Tosca\Tosca Testsuite\Classic\ocr</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">TMP = C:\Users\lajdama\AppData\Local\Temp</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">TNS_ADMIN = \\avfs03.at-work.local\Home.all</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">TRICENTIS_ALLUSERS_APPDATA = C:\ProgramData\TRICENTIS\Tosca Testsuite\7.0.0</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">TRICENTIS_HOME = C:\Tosca\Tosca Testsuite\Classic</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">TRICENTIS_LICENSING_HOME = C:\Tosca\Tosca Testsuite\Licensing</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">TRICENTIS_PROJECTS = C:\Tosca\Tosca_Projects\\</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">TRICENTIS_SEARCH = C:\Tosca\Tosca Testsuite\ToscaCommander;;C:\Tosca\Tosca Testsuite\Classic;C:\Tosca\Tosca Testsuite\Classic\dll;C:\Tosca\Tosca Testsuite\Classic\dll\GuptaEngine;C:\Tosca\Tosca Testsuite\ToscaCommander;C:\Tosca\Tosca Testsuite\Classic\dll\DelphiEngine;C:\Tosca\Tosca Testsuite\Classic\dll\PBEngine;C:\Tosca\Tosca Testsuite\Classic\dll\VBEngine;C:\Tosca\Tosca Testsuite\Classic\dll\DotNetHooking;</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">TUXDIR = C:\oracle\tuxedo10gR3</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">UATDATA = C:\WINDOWS\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">USERDNSDOMAIN = AT-WORK.LOCAL</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">USERDOMAIN = AT-WORK</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">USERDOMAIN_ROAMINGPROFILE = AT-WORK</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">USERNAME = lajdama</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">USERPROFILE = C:\Users\lajdama</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">VIRTUAL_ENV = C:\Users\lajdama\PycharmProjects\RobotFramework_1\venv2</msg>
+<msg timestamp="20211113 13:12:34.293" level="INFO">WINDIR = C:\WINDOWS</msg>
+<status status="PASS" starttime="20211113 13:12:34.293" endtime="20211113 13:12:34.293"/>
 </kw>
 <kw name="Log" library="BuiltIn">
-<arg>This is just log action</arg>
+<arg>${TEST_NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211113 12:36:27.783" level="INFO">This is just log action</msg>
-<status status="PASS" starttime="20211113 12:36:27.783" endtime="20211113 12:36:27.783"/>
+<msg timestamp="20211113 13:12:34.293" level="INFO">Homework num. 2</msg>
+<status status="PASS" starttime="20211113 13:12:34.293" endtime="20211113 13:12:34.293"/>
 </kw>
-<kw name="Create File" library="OperatingSystem">
-<arg>slides.md</arg>
-<arg>'#SLIDES'</arg>
-<doc>Creates a file with the given content and encoding.</doc>
-<msg timestamp="20211113 12:36:27.783" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\slides.md"&gt;C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\slides.md&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20211113 12:36:27.783" endtime="20211113 12:36:27.783"/>
-</kw>
-<kw name="File Should Exist" library="OperatingSystem">
-<arg>slides.md</arg>
-<doc>Fails unless the given ``path`` points to an existing file.</doc>
-<msg timestamp="20211113 12:36:27.783" level="INFO" html="true">File '&lt;a href="file://C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\slides.md"&gt;C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\slides.md&lt;/a&gt;' exists.</msg>
-<status status="PASS" starttime="20211113 12:36:27.783" endtime="20211113 12:36:27.783"/>
-</kw>
-<tag>homework</tag>
-<status status="PASS" starttime="20211113 12:36:27.783" endtime="20211113 12:36:27.783"/>
+<status status="PASS" starttime="20211113 13:12:34.277" endtime="20211113 13:12:34.293"/>
 </test>
-<status status="PASS" starttime="20211113 12:36:27.745" endtime="20211113 12:36:27.799"/>
+<status status="PASS" starttime="20211113 13:12:34.246" endtime="20211113 13:12:34.293"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">homework</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="1 Homework">1 Homework</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="2 Homework">2 Homework</stat>
 </suite>
 </statistics>
 <errors>

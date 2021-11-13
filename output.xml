@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.6 on win32)" generated="20211113 12:36:27.730" rpa="false" schemaversion="2">
+<suite id="s1" name="1 Homework" source="C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\1_Homework.robot">
+<test id="s1-t1" name="Homework num. 1">
+<kw name="Log" library="BuiltIn" type="SETUP">
+<arg>${TEST_NAME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211113 12:36:27.783" level="INFO">Homework num. 1</msg>
+<status status="PASS" starttime="20211113 12:36:27.783" endtime="20211113 12:36:27.783"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>This is just log action</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211113 12:36:27.783" level="INFO">This is just log action</msg>
+<status status="PASS" starttime="20211113 12:36:27.783" endtime="20211113 12:36:27.783"/>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<arg>slides.md</arg>
+<arg>'#SLIDES'</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<msg timestamp="20211113 12:36:27.783" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\slides.md"&gt;C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\slides.md&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20211113 12:36:27.783" endtime="20211113 12:36:27.783"/>
+</kw>
+<kw name="File Should Exist" library="OperatingSystem">
+<arg>slides.md</arg>
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<msg timestamp="20211113 12:36:27.783" level="INFO" html="true">File '&lt;a href="file://C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\slides.md"&gt;C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\slides.md&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20211113 12:36:27.783" endtime="20211113 12:36:27.783"/>
+</kw>
+<tag>homework</tag>
+<status status="PASS" starttime="20211113 12:36:27.783" endtime="20211113 12:36:27.783"/>
+</test>
+<status status="PASS" starttime="20211113 12:36:27.745" endtime="20211113 12:36:27.799"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">homework</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="1 Homework">1 Homework</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

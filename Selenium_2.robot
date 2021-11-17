@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-[Setup]      Open Chrome On Artin Homepage
+Test Setup      Open Chrome On Artin Homepage
 [Teardown]    close browser
 Resource    ./keywords/keywords.robot
 Resource    ./variables/variables.robot

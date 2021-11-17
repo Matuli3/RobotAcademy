@@ -7,7 +7,7 @@ Resource    ./variables/variables.robot
 
 *** Test Cases ***
 Homework_3
-    Sleep     15 s
+    Sleep     5 s
     click element    id:menu-item-3127
     Sleep    2 s
     Wait Until Page Contains    Voľné miesta

@@ -8,11 +8,12 @@ Resource    ./variables/variables.robot
 *** Test Cases ***
 Homework_3
     Sleep     5 s
-    click element    id:menu-item-3127
+    click element    ${menu_kariera}
     Sleep    2 s
     Wait Until Page Contains    Voľné miesta
     Page should contain    Test Automation Engineer (Python)
-    click element      //*[@id="MixItUp4CAF65"]/div[2]/div[1]/h4/a
+    click element    xpath://*[@id="MixItUpAE2584"]/div[2]/div[1]/h4/a/div/strong
+    #click element    xpath:/html/body/div[1]/div[5]/div/div[1]/div/div/p/a
 
 *** Keywords ***
 Open Chrome On Artin Homepage

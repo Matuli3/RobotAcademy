@@ -22,5 +22,6 @@ Artin2
 *** Keywords ***
 Open Chrome On Artin Homepage
     open browser    https://www.artin.sk    gc
-    maximize browser window
+    #maximize browser window
+    Set window size    1024    768
     Wait Until Page Contains    Vyvíjame, integrujeme a testujeme softvér pre najväčších    5

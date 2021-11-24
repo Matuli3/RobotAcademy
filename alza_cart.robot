@@ -6,22 +6,70 @@ Resource    ./variables/variables.robot
 #[Teardown]    close browser
 
 *** Test Cases ***
-Test title
-    mouse over    //*[@id="litp18890188"]/a
+Test 311
+    Mouse over    //*[@id="litp18890188"]/a
     Sleep    2 s
     Wait Until Page Contains     Home & Office
-    click element    ${menu_homeandoffice}
-    click element    ${afforable_notebooks}
+    Click element    ${menu_homeandoffice}
+    Click element    ${afforable_notebooks}
     Sleep    3 s
-    #click element    ${bestsellers_notebooks}
-    click element    xpath://*[@id="ui-id-4"]
+    Click element    ${bestsellers_notebooks}
     Sleep    2 s
     ${price_buffer}    Get text    ${price_buffer}
-    click element    ${buy_3besteler}
-    Wait Until Page Contains    Product Added to Cart.    10 s
+    Click element    ${buy_3besteler}
+    Wait Until Page Contains    Product Added to Cart.    15 s
     ${basket_count}    Get Element Count     ${basket_count}
     ${price_buffer2}    Get text    ${price_buffer2}
     Should be equal    ${price_buffer2}    ${price_buffer}
+    Should be equal as numbers    ${basket_count}     1
+    Click element    ${Proceed}
+    Click element    ${Continue}
+    Wait Until Page Contains     Do not forget these important things
+    Click element    ${Donotadd}
+    Click element    ${BratislavaMain}
+    ${BasketCount}     get text    ${BasketCount}
+
+Test 312
+    Click element    ${SearchBar}
+    Input text    ${SearchBar}    lego
+    Click element    ${SearchBtn}
+    Wait Until Page Contains    Top-Rated
+    Click element    ${TopRatedLego}
+    Sleep    2 s
+    Click element    ${3_2_Lego}
+    Wait Until Page Contains    Product Added to Cart.    15 s
+    ${basket_count}    Get Element Count     ${basket_count}
+    Should be equal as numbers    ${basket_count}     1
+    Click element    ${AlzaLogo}
+    Click element    ${DealWeaks}
+    Click element    ${4thDeal}
+    Wait Until Page Contains    Product Added to Cart.    15 s
+    Sleep    2 s
+    ${basket_count2}    Get Element Count    ${basket_count2}
+    #Should be equal as numbers    ${basket_count2}    2
+    Click element    ${AlzaLogo}
+    Reload page
+    Mouse over    ${HouseHolds}
+    Wait Until Page Contains     Light Bulbs and Lighting
+    Sleep     1s
+    Click element    ${MoreLightBulbs}
+    Click element    ${WorkLighs}
+    Click element    ${bestsellers_WorkLights}
+    Click element    ${1BestSeller_WorkLighs}
+    Click element    ${AddToCart_inside}
+    Wait Until Page Contains    Product Added to Cart.    15 s
+    ${basket_count2}    Get text    ${basket_count2}
+    Should be equal as numbers    ${basket_count2}    3
+    Click element     ${basket_count2}
+    ${url}=   Get Location
+
+Test 313
+    Go to    https://www.alza.sk/EN/honor-9-lite-midnight-black-d5240693.htm
+    Wait Until Page Contains    We apologise, but the product is no longer sold
+    Page should contain     Show alternatives
+    Page should not contain     Add to Cart
+
+
 
 
 *** Keywords ***

@@ -1,119 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.9.6 on win32)" generated="20211118 15:55:26.321" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.9.6 on win32)" generated="20211124 16:29:38.735" rpa="false" schemaversion="2">
 <suite id="s1" name="Alza Cart" source="C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\alza_cart.robot">
-<test id="s1-t1" name="Test title">
+<test id="s1-t1" name="Test 313">
 <kw name="Open Chrome On Alza Homepage" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://www.alza.sk/EN/</arg>
 <arg>gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211118 15:55:26.691" level="INFO">Opening browser 'gc' to base url 'https://www.alza.sk/EN/'.</msg>
-<status status="PASS" starttime="20211118 15:55:26.691" endtime="20211118 15:55:30.714"/>
+<msg timestamp="20211124 16:29:39.841" level="INFO">Opening browser 'gc' to base url 'https://www.alza.sk/EN/'.</msg>
+<status status="PASS" starttime="20211124 16:29:39.839" endtime="20211124 16:29:49.024"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211118 15:55:30.714" endtime="20211118 15:55:31.184"/>
+<status status="PASS" starttime="20211124 16:29:49.024" endtime="20211124 16:29:49.637"/>
 </kw>
-<status status="PASS" starttime="20211118 15:55:26.691" endtime="20211118 15:55:31.184"/>
+<status status="PASS" starttime="20211124 16:29:39.838" endtime="20211124 16:29:49.638"/>
 </kw>
-<kw name="Mouse Over" library="SeleniumLibrary">
-<arg>//*[@id="litp18890188"]/a</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20211118 15:55:31.190" level="INFO">Simulating Mouse Over on element '//*[@id="litp18890188"]/a'.</msg>
-<status status="PASS" starttime="20211118 15:55:31.188" endtime="20211118 15:55:31.636"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2 s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211118 15:55:33.643" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211118 15:55:31.637" endtime="20211118 15:55:33.643"/>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.alza.sk/EN/honor-9-lite-midnight-black-d5240693.htm</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211124 16:29:49.705" level="INFO">Opening url 'https://www.alza.sk/EN/honor-9-lite-midnight-black-d5240693.htm'</msg>
+<status status="PASS" starttime="20211124 16:29:49.705" endtime="20211124 16:29:57.471"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<arg>Home &amp; Office</arg>
+<arg>We apologise, but the product is no longer sold</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20211118 15:55:33.643" endtime="20211118 15:55:33.695"/>
+<status status="PASS" starttime="20211124 16:29:57.472" endtime="20211124 16:29:57.562"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${menu_homeandoffice}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211118 15:55:33.696" level="INFO">Clicking element 'xpath://*[@id="fb18890188"]/div[2]/div[1]/div[2]/div[1]/a[1]'.</msg>
-<status status="PASS" starttime="20211118 15:55:33.696" endtime="20211118 15:55:36.268"/>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Show alternatives</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211124 16:29:58.004" level="INFO">Current page contains text 'Show alternatives'.</msg>
+<status status="PASS" starttime="20211124 16:29:57.571" endtime="20211124 16:29:58.004"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${afforable_notebooks}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211118 15:55:36.269" level="INFO">Clicking element 'xpath://*[@id="content0"]/div[1]/div[2]/div[3]/div/div[1]/a[8]/span/span/span'.</msg>
-<status status="PASS" starttime="20211118 15:55:36.269" endtime="20211118 15:55:38.047"/>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<arg>Add to Cart</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211124 16:30:00.960" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-52.png"&gt;&lt;img src="selenium-screenshot-52.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211124 16:30:00.469" endtime="20211124 16:30:00.960"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3 s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211118 15:55:41.053" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211118 15:55:38.050" endtime="20211118 15:55:41.053"/>
+<msg timestamp="20211124 16:30:00.967" level="FAIL">Page should not have contained text 'Add to Cart'.</msg>
+<status status="FAIL" starttime="20211124 16:29:58.006" endtime="20211124 16:30:00.967"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="ui-id-4"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211118 15:55:41.056" level="INFO">Clicking element 'xpath://*[@id="ui-id-4"]'.</msg>
-<status status="PASS" starttime="20211118 15:55:41.055" endtime="20211118 15:55:41.267"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2 s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211118 15:55:43.270" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211118 15:55:41.269" endtime="20211118 15:55:43.270"/>
-</kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${price_buffer}</var>
-<arg>${price_buffer}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211118 15:55:43.310" level="INFO">${price_buffer} = 511 €</msg>
-<status status="PASS" starttime="20211118 15:55:43.271" endtime="20211118 15:55:43.310"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${buy_3besteler}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211118 15:55:43.311" level="INFO">Clicking element 'xpath://div[@id="boxc"]//div[3]//a[@class="btnk1"]'.</msg>
-<status status="PASS" starttime="20211118 15:55:43.310" endtime="20211118 15:55:43.436"/>
-</kw>
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<arg>Product Added to Cart.</arg>
-<arg>10 s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20211118 15:55:43.436" endtime="20211118 15:55:46.202"/>
-</kw>
-<kw name="Get Element Count" library="SeleniumLibrary">
-<var>${basket_count}</var>
-<arg>${basket_count}</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20211118 15:55:46.229" level="INFO">${basket_count} = 1</msg>
-<status status="PASS" starttime="20211118 15:55:46.203" endtime="20211118 15:55:46.229"/>
-</kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${price_buffer2}</var>
-<arg>${price_buffer2}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211118 15:55:46.267" level="INFO">${price_buffer2} = 511 €</msg>
-<status status="PASS" starttime="20211118 15:55:46.229" endtime="20211118 15:55:46.267"/>
-</kw>
-<kw name="Should Be Equal" library="BuiltIn">
-<arg>${price_buffer2}</arg>
-<arg>${price_buffer}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20211118 15:55:46.268" endtime="20211118 15:55:46.269"/>
-</kw>
-<status status="PASS" starttime="20211118 15:55:26.675" endtime="20211118 15:55:46.269"/>
+<status status="FAIL" starttime="20211124 16:29:39.828" endtime="20211124 16:30:00.987">Page should not have contained text 'Add to Cart'.</status>
 </test>
-<status status="PASS" starttime="20211118 15:55:26.337" endtime="20211118 15:55:46.272"/>
+<status status="FAIL" starttime="20211124 16:29:38.739" endtime="20211124 16:30:00.991"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Alza Cart">Alza Cart</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Alza Cart">Alza Cart</stat>
 </suite>
 </statistics>
 <errors>

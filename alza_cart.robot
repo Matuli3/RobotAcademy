@@ -60,6 +60,7 @@ Test 312
     Wait Until Page Contains    Product Added to Cart.    15 s
     ${basket_count2}    Get text    ${basket_count2}
     Should be equal as numbers    ${basket_count2}    3
+
     Click element     ${basket_count2}
     ${url}=   Get Location
 
@@ -67,7 +68,7 @@ Test 313
     Go to    https://www.alza.sk/EN/honor-9-lite-midnight-black-d5240693.htm
     Wait Until Page Contains    We apologise, but the product is no longer sold
     Page should contain     Show alternatives
-    Page should not contain     Add to Cart
+    Page should not contain element    ${AddToCart_inside}
 
 
 

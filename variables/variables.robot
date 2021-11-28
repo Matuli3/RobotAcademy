@@ -14,7 +14,8 @@ ${price_buffer2}    xpath://*[@id="price"]
 ${Proceed}    id:varBToBasketButton
 ${Continue}    xpath://*[@id="blockBtnRight"]/a
 ${Donotadd}    //*[@id="alzaDialog"]/div[3]/div[2]/span[1]
-${BratislavaMain}    xpath:/html/body/[contains(text(),'alzacheckbox classic')]
+${BratislavaMain}    //div[contains(text(), "Bratislava - main shop")]
+#xpath://div[contains(@id, 'deliveryContainer')][contains(., 'Bratislava - main shop')]
 ${SearchBar}    //*[@id="edtSearch"]
 ${SearchBtn}    //*[@id="btnSearch"]
 ${TopRatedLego}    id:ui-id-6
@@ -28,6 +29,30 @@ ${WorkLighs}    //*[@id="fb18857643"]/div[2]/div[5]/div[2]/div[1]/a[10]
 ${bestsellers_WorkLights}     xpath://*[@id="ui-id-3"]
 ${1BestSeller_WorkLighs}    id:img5690151
 ${AddToCart_inside}    xpath://*[@id="cpcm_cpc_tdAmount"]/span/div[1]/div/a/span[2]
+
+${Suhlasim_google}    xpath://*[@id="L2AGLb"]/div
+${Search_google}    xpath:/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input
+${Lang_google}     //*[@id="SIvCob"]/a
+${}
+${Lang_menu}     xpath://*[@id="content"]/div/header/div[1]/div/div/div[1]/ul
+${Lang_SK}     xpath://*[@id="content"]/div/header/div[1]/div/div/div[1]/ul/li[2]
+${Lang_EN}
+${Aktuality}    xpath://*[@id="content"]/div[1]/header/div[1]/div/div/div[1]/div[1]/nav/ul/li[2]/a/span
+${Dopravna_sit}    xpath://*[@id="content"]/div[1]/header/div[1]/div/div/div[1]/div[1]/nav/ul/li[3]/a/span
+${Dopravna_sit_event}    xpath:
+${Dopravna_sit_pop_up}    xpath:
+${Hlavne_tahy}    xpath://*[@id="content"]/div[1]/header/div[1]/div/div/div[1]/div[1]/nav/ul/li[4]/a/span
+${BaObchvat}    xpath://*[@id="layoutContainers"]/div/div[2]/div/div/section/div[2]/htmlwrapper/div[2]/module/ui-view/module/div/div[2]/div/div
+${oPortali}    xpath://*[@id="content"]/div[1]/header/div[1]/div/div/div[1]/div[1]/nav/ul/li[5]/a/span
+${MobilnaAplikacia}    xpath://*[@id="content"]/div[1]/header/div[1]/div/div/div[1]/div[1]/nav/ul/li[5]/ul/li[1]/a
+${PreOdbVer}    xpath://*[@id="content"]/div[1]/header/div[1]/div/div/div[1]/div[1]/nav/ul/li[5]/ul/li[2]/a
+${UzitocneLinky}    xpath://*[@id="content"]/div[1]/header/div[1]/div/div/div[1]/div[1]/nav/ul/li[5]/ul/li[3]/a
+${Map_Ba}    xpath://*[@id="map"]/div[1]/a
+${list_BB}    xpath://*[@id="mapLegend"]/div/ul/li[6]/div/span[2]
+${Geolocation}    xpath>//*[@id="layoutContainers"]/div/div[2]/div/div/section/div[2]/htmlwrapper/div[2]/module/div/section[1]/module/div/div[2]/div[3]/div[1]/button
+${ZoomIn}    xpath://*[@id="layoutContainers"]/div/div[2]/div/div/section/div[2]/htmlwrapper/div[2]/module/div/section[1]/module/div/div[2]/div[3]/div[2]/button[1]
+${ZoomOut}    xpath://*[@id="layoutContainers"]/div/div[2]/div/div/section/div[2]/htmlwrapper/div[2]/module/div/section[1]/module/div/div[2]/div[3]/div[2]/button[2]
+${Slovakia_btn}    xpath://*[@id="layoutContainers"]/div/div[2]/div/div/section/div[2]/htmlwrapper/div[2]/module/div/section[1]/module/div/div[2]/div[3]/div[3]/button
 
 
 

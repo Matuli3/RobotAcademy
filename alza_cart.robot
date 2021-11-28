@@ -24,8 +24,8 @@ Test 311
     Should be equal as numbers    ${basket_count}     1
     Click element    ${Proceed}
     Click element    ${Continue}
-    Wait Until Page Contains     Do not forget these important things
-    Click element    ${Donotadd}
+    #Wait Until Page Contains     Do not forget these important things
+    #Click element    ${Donotadd}
     Click element    ${BratislavaMain}
     ${BasketCount}     get text    ${BasketCount}
 
@@ -69,6 +69,23 @@ Test 313
     Wait Until Page Contains    We apologise, but the product is no longer sold
     Page should contain     Show alternatives
     Page should not contain element    ${AddToCart_inside}
+
+Random element
+    Set Variable    ${locator}     xpath://*[@id="rootHtml"]/body
+    # zoznal (list) s elementami
+    ${random_number}    Evaluate    random.randint(1, 19)    random
+    Click Element    ${locator}[${random_number}]
+    ${elements}    Get WebElements      xpath://*[@id="rootHtml"]/body
+    Clck element    ${random_element}
+
+Sort
+     Create List    ${prices}
+     ${elements}    Get WebElement   xpath://
+     FOR    ${price}    IN    @{elements}
+         Log    ${price}
+     END
+     veela dalsich veci
+
 
 
 

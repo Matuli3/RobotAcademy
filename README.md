@@ -3,8 +3,7 @@ robot file     ../RobotAcademy/heureka_final.robot
 variables    ../RobotAcademy/variables/variables_final.robot
 keywords    ../RobotAcademy/keywords/keywords_final
 
-
-## Requirements:
+# Requirements:
 - python 3.9
   - with virtualenv
 - pycharm (or any other editor)

@@ -8,6 +8,7 @@ Resource    ./variables/variables.robot
 *** Test Cases ***
 odoprave.info_2
     Click element    ${Lang_menu}
+    Sleep    1 s
     Click element    ${Lang_SK}
     Wait until page contains    Hlavné ťahy
     Click element    ${Aktuality}

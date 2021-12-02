@@ -15,6 +15,7 @@ Heureka_Add_And_Remove_items_from_basket
     Check if counter of items in Basket is correct
     Check if prices of products are in selected range (40€-100€)
     Remove Products from Basket One by One and check if was removed
+    Check if Basket is empty
 
 
 

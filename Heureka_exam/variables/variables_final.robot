@@ -21,7 +21,14 @@ ${Price_of_3_product_from_basket}    xpath:(//div[@class="c-product-card__price 
 ${Remove_X_btn_1}    xpath:(//a[@class="c-product-card__close c-modal__toggle js-modal__toggle e-action"])[1]
 ${Remove_X_btn_2}    xpath:(//a[@class="c-product-card__close c-modal__toggle js-modal__toggle e-action"])[2]
 ${Remove_X_btn_3}    xpath:(//a[@class="c-product-card__close c-modal__toggle js-modal__toggle e-action"])[3]
-${Confrim_Remove}    xpath://*[@id="snippet--cart-content-data"][contains(., 'Odstrániť z košíka')]
+${Confrim_Remove}    xpath:(//a[@class="e-button e-button--negative"])[1]
+${Click_on_Confrim_pop-up}     xpath:(//a[@class="e-button e-button--negative"])[1]/parent::*
+
+
+(//a[@class[contains(@class, 'e-heading u-epsilon u-tight)]
+Naozaj chcete tento produkt odstrániť z košíka?
+xpath://*[@id="snippet--cart-content-data"][contains(., 'Odstrániť z košíka')]
+[contains(., 'Odstrániť z košíka')]
  #xpath:(//a[contains(text(),'Odstrániť z košíka')])[1]
  xpath:(//a[contains(text(),'Odstrániť z košíka')])[1]
  xpath://a[contains@class, '_negative'][contains(., 'Odstrániť z košíka')]

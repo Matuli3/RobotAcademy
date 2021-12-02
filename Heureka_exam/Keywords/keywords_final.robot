@@ -10,7 +10,7 @@ Open category: Tips for gifts - For Men - Chritmass - Speakers - Price from 40 t
     Click element    ${Category_Christmas}
     #Click element    ${Price_range_40-100}
     # Z nejakeho dovodu sa zrazu reproduktory nezobrazuju pod 40-100€ filtrom (click funguje)
-    # Wait Until Element Is Enabled    ${Price_range_40-100}
+    #Wait Until Element Is Enabled    ${Price_range_40-100}
     Sleep    2 s
     #Page Should Contain    Darčeky pre mužov na Vianoce v cene 40 - 100 €
     Click element    ${Category_Speakers}
@@ -64,19 +64,29 @@ Remove Products from Basket One by One and check if was removed
     Wait Until Element Is Visible    ${Remove_X_btn_1}
     Sleep    1 s
     Click Element    ${Remove_X_btn_1}
-    Wait Until Element Is Visible    ${Confrim_Remove}
+    Wait Until Element Is Enabled    ${Confrim_Remove}     20
+    Click Element    ${Click_on_Confrim_pop-up}
+    #Sleep    5 s
     Click Element    ${Confrim_Remove}
     Reload page
     Wait Until Element Is Visible    ${Remove_X_btn_2}
     Page Should Not Contain    Creative SBS E2900
     Click Element    ${Remove_X_btn_2}
+    Wait Until Element Is Enabled    ${Confrim_Remove}     20
+    Click Element    ${Click_on_Confrim_pop-up}
+    #Sleep    10 s
     Click Element    ${Confrim_Remove}
     Reload page
     Page Should Not Contain    SAMSUNG SWA-8500S/EN
     Wait Until Element Is Visible    ${Remove_X_btn_2}
     Click Element    ${Remove_X_btn_3}
+    Wait Until Element Is Enabled    ${Confrim_Remove}     20
+    Click Element    ${Click_on_Confrim_pop-up}
+    #Sleep    10 s
     Click Element    ${Confrim_Remove}
     Reload page
     Page Should Not Contain    JBL Control
 
+Check if Basket is empty
+    Wait until page contain    Váš košík zíva prázdnotou..
 

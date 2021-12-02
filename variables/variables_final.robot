@@ -29,10 +29,3 @@ ${Vymaz_3_Item}      //*[@id="snippet--cart-content-data"]/div[4]/div/div/div[1]
 
 
 
-
-c-cart-confirm__button--cart e-button e-button--highlight
-
-xpath://a[@title="Stolové hry"][contains(@class, 'heading category')]
-
-//div[@class="c-top-position"]//button[@class="c-top-offer__cart-button e-button e-button--highlight"]
-

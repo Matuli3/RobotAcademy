@@ -1,38 +1,42 @@
 *** Variables ***
-${Neskor_btn}    id:onesignal-slidedown-cancel-button
-${TipyNaDarceky}    xpath://*[@id="today-tips-ads"]/div/div/div[1]/div/div/a/img
-${Kategoria_Muz}    xpath://*[@id="page-main"]/div[3]/section[2]/div[1]/div/a[2]
-${Kategoria_Vianoce}    xpath://*[@id="page-main"]/div[3]/div/section/div[1]/ul/li[1]/a/span[2]
+${Tips_for_gifts}    xpath://img[@alt="Tipy na darčeky"]
+${Category_man}    xpath://a[@data-label="Muž"]
+${Category_Christmas}    xpath://a[@data-name="Vianoce"]
+${Price_range_40-100}     xpath://label[contains(@class, 'checkbox')][@for="40-100"]
+${Category_Speakers}    xpath://a[@title="Reprosústavy a reproduktory"][contains(@class, 'heading category')]
 
-${Cena_40az100}     xpath://*[@id="price"]/div/div/div/ul/li[3]/div/label[1]
-${Kategoria_Reprosustavy}    xpath://*[@id="page-main"]/div[3]/div/section/div[2]/div[1]/ul/li[2]/section/div/div/div/h3/a
-${JBLControlOne}    xpath://*[@id="root"]/div/div/div/main/section/div[1]/ul/li[6]/section/div/div/div[1]/h3/a
-${JBLControlOne_Kupit}    xpath://div[contains(@class, '__buy')][contains(., 'Kúpiť na Heureke')]
-#${Armodd_Squarz9_Kupit2}    xpath://div[contains(@class, 'c-variant__buttons u-column')][contains(., 'Kúpiť na Heureke')][1]
-# xpath://*[@id="__next"]/main/div/div[1]/div/div[1]/div[2]/div[4]/div/div[2]
-${Samsung_SWA_8500}    xpath://*[@id="root"]/div/div/div/main/section/div[1]/ul/li[9]/section/div/div/div[1]/h3/a
-${Samsung_SWA_8500_Kupit}    xpath://div[contains(@class, '__buy')][contains(., 'Kúpiť na Heureke')]
-#${Xiaomi_Mi_Watch_Kupit2}    xpath://div[contains(@class, '__info')][contains(., 'Kúpiť na Heureke')][1]
+${JBLControlOne}    xpath://img[@alt="JBL Control One"]
+${JBLControlOne_Buy_on_Heureka}    xpath://div[contains(@class, '__buy')][contains(., 'Kúpiť na Heureke')]
 
-${Creative_SBS_E2900}    xpath://*[@id="root"]/div/div/div/main/section/div[1]/ul/li[12]/section/div/div/div[1]/h3/a
-${Creative_SBS_E2900_Kupit}    xpath://div[contains(@class, '__buy')][contains(., 'Kúpiť na Heureke')]
-#${Amazfit_GTS_Kupit2}    //div[contains(@class, '__info')][contains(., 'Kúpiť na Heureke')][1]
+${Samsung_SWA_8500}    xpath://img[@alt="Samsung SWA-8500"]
+${Samsung_SWA_8500_Buy_on_Heureka}    xpath://div[contains(@class, '__buy')][contains(., 'Kúpiť na Heureke')]
 
-${Kosik}    xpath://a[@href="https://www.heureka.sk/kosik/"]
+${Creative_SBS_E2900}    xpath://img[@alt="Creative SBS E2900"]
+${Creative_SBS_E2900_Buy_on_Heureka}    xpath://div[contains(@class, '__buy')][contains(., 'Kúpiť na Heureke')]
+${Speakers_from_40_to_100euro}    https://reprosustavy-a-reproduktory.heureka.sk/f:p:40-100/
+
+${Price_of_1_product_from_basket}    xpath:(//div[@class="c-product-card__price u-bold"])[1]
+${Price_of_2_product_from_basket}    xpath:(//div[@class="c-product-card__price u-bold"])[2]
+${Price_of_3_product_from_basket}    xpath:(//div[@class="c-product-card__price u-bold"])[3]
+${Remove_X_btn_1}    xpath:(//a[@class="c-product-card__close c-modal__toggle js-modal__toggle e-action"])[1]
+${Remove_X_btn_2}    xpath:(//a[@class="c-product-card__close c-modal__toggle js-modal__toggle e-action"])[2]
+${Remove_X_btn_3}    xpath:(//a[@class="c-product-card__close c-modal__toggle js-modal__toggle e-action"])[3]
+${Confrim_Remove}    xpath://*[@id="snippet--cart-content-data"][contains(., 'Odstrániť z košíka')]
+ #xpath:(//a[contains(text(),'Odstrániť z košíka')])[1]
+ xpath:(//a[contains(text(),'Odstrániť z košíka')])[1]
+ xpath://a[contains@class, '_negative'][contains(., 'Odstrániť z košíka')]
+ //*[@id="snippet--cart-content-data"]/div[4]/div/div/div[1]/section/div/footer/a
+
+
+${counter}
+${space}
+@{}
+
+${Basket}    https://www.heureka.sk/kosik/
 ${Kosik_pocet}    xpath://li[@class="c-user-controls__item c-user-controls__item--cart"]//span[@class="c-user-controls__icon-container"]
 #${Kosik_suma1}    xpath://*[@id="snippet--cart-content-data"]/div[3]/div[1]/div/div[2]/div[2]/div[2]
 ${Vymaz_1_Item}    xpath://*[@id="snippet--cart-content-data"]/div[3]/div[1]/div/div[1]/a/svg/use
 ${PotvrdZmazanie}    xpath://*[@id="snippet--cart-content-data"]/div[3]/div[1]/div/div[1]/section/div/footer/a
 ${Vymaz_2_Item}      xpath://*[@id="snippet--cart-content-data"]/div[3]/div[2]/div/div[1]/a/svg
 ${Vymaz_3_Item}      //*[@id="snippet--cart-content-data"]/div[4]/div/div/div[1]/a/svg
-
-
-
-
-
-c-cart-confirm__button--cart e-button e-button--highlight
-
-xpath://a[@title="Stolové hry"][contains(@class, 'heading category')]
-
-//div[@class="c-top-position"]//button[@class="c-top-offer__cart-button e-button e-button--highlight"]
 

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.6 on win32)" generated="20211202 21:29:42.015" rpa="false" schemaversion="2">
+<suite id="s1" name="Heureka Final" source="C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\Heureka_exam\heureka_final.robot">
+<test id="s1-t1" name="Heureka_Add_And_Remove_items_from_basket">
+<kw name="Open Chrome On Heureka Homepage" library="keywords_final">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.heureka.sk</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211202 21:29:42.595" level="INFO">Opening browser 'gc' to base url 'https://www.heureka.sk'.</msg>
+<status status="PASS" starttime="20211202 21:29:42.594" endtime="20211202 21:29:48.935"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1920</arg>
+<arg>1080</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20211202 21:29:48.935" endtime="20211202 21:29:49.455"/>
+</kw>
+<status status="PASS" starttime="20211202 21:29:42.593" endtime="20211202 21:29:49.456"/>
+</kw>
+<kw name="Open category: Tips for gifts - For Men - Chritmass - Speakers - Price from 40 to 100€" library="keywords_final">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Tips_for_gifts}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:29:49.481" level="INFO">Clicking element 'xpath://img[@alt="Tipy na darčeky"]'.</msg>
+<status status="PASS" starttime="20211202 21:29:49.479" endtime="20211202 21:29:54.181"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Pre koho je darček</arg>
+<arg>10 s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211202 21:29:54.181" endtime="20211202 21:29:55.383"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Category_Man}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:29:55.383" level="INFO">Clicking element 'xpath://a[@data-label="Muž"]'.</msg>
+<status status="PASS" starttime="20211202 21:29:55.383" endtime="20211202 21:30:02.447"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Category_Christmas}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:30:02.448" level="INFO">Clicking element 'xpath://a[@data-name="Vianoce"]'.</msg>
+<status status="PASS" starttime="20211202 21:30:02.448" endtime="20211202 21:30:07.150"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211202 21:30:09.167" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211202 21:30:07.152" endtime="20211202 21:30:09.167"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Category_Speakers}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:30:09.169" level="INFO">Clicking element 'xpath://a[@title="Reprosústavy a reproduktory"][contains(@class, 'heading category')]'.</msg>
+<status status="PASS" starttime="20211202 21:30:09.168" endtime="20211202 21:30:09.717"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>New</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20211202 21:30:09.718" endtime="20211202 21:30:09.744"/>
+</kw>
+<status status="PASS" starttime="20211202 21:29:49.478" endtime="20211202 21:30:09.745"/>
+</kw>
+<kw name="Add product JBL Control One into basket (via &quot;Kupit na heureke)" library="keywords_final">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${JBLControlOne}</arg>
+<arg>10 s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211202 21:30:09.747" endtime="20211202 21:30:16.265"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${JBLControlOne}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:30:16.266" level="INFO">Clicking element 'xpath://img[@alt="JBL Control One"]'.</msg>
+<status status="PASS" starttime="20211202 21:30:16.265" endtime="20211202 21:30:21.406"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kúpiť na Heureke</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211202 21:30:21.406" endtime="20211202 21:30:22.396"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${JBLControlOne_Buy_on_Heureka}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:30:22.397" level="INFO">Clicking element 'xpath://div[contains(@class, '__buy')][contains(., 'Kúpiť na Heureke')]'.</msg>
+<status status="PASS" starttime="20211202 21:30:22.396" endtime="20211202 21:30:22.707"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${Speakers_from_40_to_100euro}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211202 21:30:22.708" level="INFO">Opening url 'https://reprosustavy-a-reproduktory.heureka.sk/f:p:40-100/'</msg>
+<status status="PASS" starttime="20211202 21:30:22.708" endtime="20211202 21:30:25.519"/>
+</kw>
+<status status="PASS" starttime="20211202 21:30:09.747" endtime="20211202 21:30:25.519"/>
+</kw>
+<kw name="Add product Samsung SWA-8500 into basket (via &quot;Kupit na heureke)" library="keywords_final">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Samsung_SWA_8500}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211202 21:30:25.521" endtime="20211202 21:30:25.698"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Samsung_SWA_8500}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:30:25.699" level="INFO">Clicking element 'xpath://img[@alt="Samsung SWA-8500"]'.</msg>
+<status status="PASS" starttime="20211202 21:30:25.698" endtime="20211202 21:30:29.809"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kúpiť na Heureke</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211202 21:30:29.810" endtime="20211202 21:30:30.955"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Samsung_SWA_8500_Buy_on_Heureka}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:30:30.956" level="INFO">Clicking element 'xpath://div[contains(@class, '__buy')][contains(., 'Kúpiť na Heureke')]'.</msg>
+<status status="PASS" starttime="20211202 21:30:30.955" endtime="20211202 21:30:31.103"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Tovar sme pridali do košíka</arg>
+<arg>10</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211202 21:30:31.103" endtime="20211202 21:30:31.946"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${Speakers_from_40_to_100euro}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211202 21:30:31.947" level="INFO">Opening url 'https://reprosustavy-a-reproduktory.heureka.sk/f:p:40-100/'</msg>
+<status status="PASS" starttime="20211202 21:30:31.946" endtime="20211202 21:30:34.838"/>
+</kw>
+<status status="PASS" starttime="20211202 21:30:25.520" endtime="20211202 21:30:34.838"/>
+</kw>
+<kw name="Add product Creative SBS E2900 into basket (via &quot;Kupit na heureke)" library="keywords_final">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Creative_SBS_E2900}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211202 21:30:34.840" endtime="20211202 21:30:35.145"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Creative_SBS_E2900}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:30:35.146" level="INFO">Clicking element 'xpath://img[@alt="Creative SBS E2900"]'.</msg>
+<status status="PASS" starttime="20211202 21:30:35.145" endtime="20211202 21:30:39.398"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kúpiť na Heureke</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211202 21:30:39.399" endtime="20211202 21:30:40.041"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Creative_SBS_E2900_Buy_on_Heureka}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:30:40.041" level="INFO">Clicking element 'xpath://div[contains(@class, '__buy')][contains(., 'Kúpiť na Heureke')]'.</msg>
+<status status="PASS" starttime="20211202 21:30:40.041" endtime="20211202 21:30:40.208"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Tovar sme pridali do košíka</arg>
+<arg>10</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211202 21:30:40.208" endtime="20211202 21:30:41.105"/>
+</kw>
+<status status="PASS" starttime="20211202 21:30:34.839" endtime="20211202 21:30:41.105"/>
+</kw>
+<kw name="Check if counter of items in Basket is correct" library="keywords_final">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${Basket}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211202 21:30:41.109" level="INFO">Opening url 'https://www.heureka.sk/kosik/'</msg>
+<status status="PASS" starttime="20211202 21:30:41.108" endtime="20211202 21:30:42.942"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20211202 21:30:42.943" endtime="20211202 21:30:43.044"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Košík</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211202 21:30:43.044" endtime="20211202 21:30:44.483"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${Kosik_pocet}</var>
+<arg>${Kosik_pocet}</arg>
+<arg>data-count</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20211202 21:30:44.521" level="INFO">${Kosik_pocet} = 3</msg>
+<status status="PASS" starttime="20211202 21:30:44.483" endtime="20211202 21:30:44.521"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${Kosik_pocet}</var>
+<arg>${Kosik_pocet}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20211202 21:30:44.522" level="INFO">${Kosik_pocet} = 3</msg>
+<status status="PASS" starttime="20211202 21:30:44.521" endtime="20211202 21:30:44.522"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${Kosik_pocet}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20211202 21:30:44.524" level="INFO">${Kosik_pocet} = 3</msg>
+<status status="PASS" starttime="20211202 21:30:44.522" endtime="20211202 21:30:44.524"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${Kosik_pocet}</arg>
+<arg>3</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20211202 21:30:44.524" endtime="20211202 21:30:44.525"/>
+</kw>
+<status status="PASS" starttime="20211202 21:30:41.108" endtime="20211202 21:30:44.525"/>
+</kw>
+<kw name="Check if prices of products are in selected range (40€-100€)" library="keywords_final">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Price_of_1_product_from_basket}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211202 21:30:44.527" endtime="20211202 21:30:44.558"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Product_price_1_buffer}</var>
+<arg>${Price_of_1_product_from_basket}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:30:44.597" level="INFO">${Product_price_1_buffer} = 73,90 €</msg>
+<status status="PASS" starttime="20211202 21:30:44.558" endtime="20211202 21:30:44.597"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${Product_price_1_buffer}</var>
+<arg>${Product_price_1_buffer}</arg>
+<arg>€</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20211202 21:30:44.597" level="INFO">${Product_price_1_buffer} = 73,90 </msg>
+<status status="PASS" starttime="20211202 21:30:44.597" endtime="20211202 21:30:44.598"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>40 &lt;= ${Product_price_1_buffer} &lt;= 100</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20211202 21:30:44.598" endtime="20211202 21:30:44.600"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Product_price_2_buffer}</var>
+<arg>${Price_of_2_product_from_basket}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:30:44.640" level="INFO">${Product_price_2_buffer} = 115,90 €</msg>
+<status status="PASS" starttime="20211202 21:30:44.601" endtime="20211202 21:30:44.640"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${Product_price_2_buffer}</var>
+<arg>${Product_price_2_buffer}</arg>
+<arg>€</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20211202 21:30:44.641" level="INFO">${Product_price_2_buffer} = 115,90 </msg>
+<status status="PASS" starttime="20211202 21:30:44.640" endtime="20211202 21:30:44.641"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>40 &lt;= ${Product_price_2_buffer} &lt;= 100</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20211202 21:30:44.641" endtime="20211202 21:30:44.641"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Product_price_3_buffer}</var>
+<arg>${Price_of_3_product_from_basket}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:30:44.690" level="INFO">${Product_price_3_buffer} = 108,90 €</msg>
+<status status="PASS" starttime="20211202 21:30:44.641" endtime="20211202 21:30:44.690"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${Product_price_3_buffer}</var>
+<arg>${Product_price_3_buffer}</arg>
+<arg>€</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20211202 21:30:44.690" level="INFO">${Product_price_3_buffer} = 108,90 </msg>
+<status status="PASS" starttime="20211202 21:30:44.690" endtime="20211202 21:30:44.690"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>40 &lt;= ${Product_price_2_buffer} &lt;= 100</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20211202 21:30:44.690" endtime="20211202 21:30:44.690"/>
+</kw>
+<status status="PASS" starttime="20211202 21:30:44.526" endtime="20211202 21:30:44.690"/>
+</kw>
+<kw name="Remove Products from Basket One by One and check if was removed" library="keywords_final">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Remove_X_btn_1}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211202 21:30:44.690" endtime="20211202 21:30:44.739"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211202 21:30:45.749" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211202 21:30:44.739" endtime="20211202 21:30:45.749"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Remove_X_btn_1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:30:45.750" level="INFO">Clicking element 'xpath:(//a[@class="c-product-card__close c-modal__toggle js-modal__toggle e-action"])[1]'.</msg>
+<status status="PASS" starttime="20211202 21:30:45.750" endtime="20211202 21:30:45.922"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Confrim_Remove}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211202 21:30:45.924" level="INFO">Clicking element 'xpath://*[@id="snippet--cart-content-data"][contains(., 'Odstrániť z košíka')]'.</msg>
+<status status="PASS" starttime="20211202 21:30:45.923" endtime="20211202 21:30:46.193"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20211202 21:30:46.193" endtime="20211202 21:30:47.879"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Remove_X_btn_2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211202 21:30:47.880" endtime="20211202 21:30:47.915"/>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<arg>Creative SBS E2900</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211202 21:30:48.237" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211202 21:30:47.991" endtime="20211202 21:30:48.238"/>
+</kw>
+<msg timestamp="20211202 21:30:48.245" level="FAIL">Page should not have contained text 'Creative SBS E2900'.</msg>
+<status status="FAIL" starttime="20211202 21:30:47.915" endtime="20211202 21:30:48.245"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Remove_X_btn_2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211202 21:30:48.245" endtime="20211202 21:30:48.245"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Confrim_Remove}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211202 21:30:48.245" endtime="20211202 21:30:48.245"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="NOT RUN" starttime="20211202 21:30:48.245" endtime="20211202 21:30:48.245"/>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<arg>SAMSUNG SWA-8500S/EN</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="NOT RUN" starttime="20211202 21:30:48.245" endtime="20211202 21:30:48.245"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Remove_X_btn_2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20211202 21:30:48.245" endtime="20211202 21:30:48.245"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Remove_X_btn_3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211202 21:30:48.245" endtime="20211202 21:30:48.245"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Confrim_Remove}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211202 21:30:48.245" endtime="20211202 21:30:48.245"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="NOT RUN" starttime="20211202 21:30:48.249" endtime="20211202 21:30:48.249"/>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<arg>JBL Control</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="NOT RUN" starttime="20211202 21:30:48.249" endtime="20211202 21:30:48.249"/>
+</kw>
+<status status="FAIL" starttime="20211202 21:30:44.690" endtime="20211202 21:30:48.250"/>
+</kw>
+<status status="FAIL" starttime="20211202 21:29:42.592" endtime="20211202 21:30:48.250">Page should not have contained text 'Creative SBS E2900'.</status>
+</test>
+<status status="FAIL" starttime="20211202 21:29:42.018" endtime="20211202 21:30:48.256"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Heureka Final">Heureka Final</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211202 21:29:42.007" level="ERROR">Error in file 'C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\Heureka_exam\heureka_final.robot' on line 6: Non-existing setting '[Teardown]'.</msg>
+<msg timestamp="20211202 21:29:42.581" level="ERROR">Error in file 'C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\Heureka_exam\variables\variables_final.robot' on line 26: Setting variable ' xpath:(//a[contains(text(),'Odstrániť z košíka')])[1]' failed: Invalid variable name ' xpath:(//a[contains(text(),'Odstrániť z košíka')])[1]'.</msg>
+<msg timestamp="20211202 21:29:42.585" level="ERROR">Error in file 'C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\Heureka_exam\variables\variables_final.robot' on line 27: Setting variable ' xpath://a[contains@class, '_negative'][contains(., 'Odstrániť z košíka')]' failed: Invalid variable name ' xpath://a[contains@class, '_negative'][contains(., 'Odstrániť z košíka')]'.</msg>
+<msg timestamp="20211202 21:29:42.586" level="ERROR">Error in file 'C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\Heureka_exam\variables\variables_final.robot' on line 28: Setting variable ' //*[@id="snippet--cart-content-data"]/div[4]/div/div/div[1]/section/div/footer/a' failed: Invalid variable name ' //*[@id="snippet--cart-content-data"]/div[4]/div/div/div[1]/section/div/footer/a'.</msg>
+<msg timestamp="20211202 21:29:42.587" level="ERROR">Error in file 'C:\Users\lajdama\PycharmProjects\RobotFramework_1\RobotAcademy\Heureka_exam\variables\variables_final.robot' on line 33: Setting variable '@{}' failed: Invalid variable name '@{}'.</msg>
+</errors>
+</robot>

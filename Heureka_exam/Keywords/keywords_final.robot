@@ -11,7 +11,6 @@ Open category: Tips for gifts - For Men - Chritmass - Speakers - Price from 40�
     #Click element    ${Price_range_40-100}
     # For some reason, category "Speakers" in no longer under 40-100€ filtre (click works)
     #Wait Until Element Is Enabled    ${Price_range_40-100}
-    Sleep    2 s
     #Page Should Contain    Darčeky pre mužov na Vianoce v cene 40 - 100 €
     Page Should Contain    Darčeky pre mužov na Vianoce
     Click element    ${Category_Speakers}
@@ -66,11 +65,9 @@ Check if prices of products are in selected range (40€-100€)
 Remove 1st Product from Basket
     Wait Until Element Is Visible    ${Remove_X_btn_1}
     ${Temp_Product_name}    Get Text    ${Name_of_product_from_basket}
-    Sleep    1 s
     Click Element    ${Remove_X_btn_1}
     Wait Until Element Is Visible    ${Confrim_Remove}     30
     Click Element    ${Click_on_Confrim_pop-up}
-    #Sleep    5 s
     Click Element    ${Confrim_Remove}
     Reload page
     Page Should Not Contain    ${Temp_Product_name}
@@ -80,12 +77,10 @@ Remove 2nd Product from Basket
     Wait Until Element Is Visible    ${Remove_X_btn_2}
     Click Element    ${Remove_X_btn_2}
     Wait Until Element Is Visible    ${Confrim_Remove}     30
-    #Sleep    10 s
     #Click Element    ${Click_on_Confrim_pop-up}
     Click Element    ${Confrim_Remove}
     Reload page
     Page Should Not Contain    ${Temp_Product_name}
-
 
 Remove 3rd Product from Basket
     ${Temp_Product_name}    Get Text    ${Name_of_product_from_basket}
@@ -93,7 +88,6 @@ Remove 3rd Product from Basket
     Click Element    ${Remove_X_btn_3}
     Wait Until Element Is Visible    ${Confrim_Remove}     30
     #Click Element    ${Click_on_Confrim_pop-up}
-    #Sleep    10 s
     Click Element    ${Confrim_Remove}
     Reload page
     Page Should Not Contain    ${Temp_Product_name}
